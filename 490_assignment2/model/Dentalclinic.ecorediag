@@ -50,7 +50,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_1FBhgdwyEeOextCSzrw0mw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="Dentalclinic.ecore#//Appointment"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1FBhgtwyEeOextCSzrw0mw" x="390" y="90" width="179"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1FBhgtwyEeOextCSzrw0mw" x="330" y="300" width="179"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_JjE6ENwzEeOextCSzrw0mw" type="1001">
     <children xmi:type="notation:Node" xmi:id="_JjFhINwzEeOextCSzrw0mw" type="4001"/>
@@ -86,7 +86,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_JjE6EdwzEeOextCSzrw0mw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="Dentalclinic.ecore#//Treatment"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JjE6EtwzEeOextCSzrw0mw" x="45" y="30" width="160"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JjE6EtwzEeOextCSzrw0mw" x="330" y="15" width="160"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_UMVXwNwzEeOextCSzrw0mw" type="1001">
     <children xmi:type="notation:Node" xmi:id="_UMV-0NwzEeOextCSzrw0mw" type="4001"/>
@@ -110,7 +110,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_UMVXwdwzEeOextCSzrw0mw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="Dentalclinic.ecore#//Dentist"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UMVXwtwzEeOextCSzrw0mw" x="105" y="300"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UMVXwtwzEeOextCSzrw0mw" x="45" y="496"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_jvEF0NwzEeOextCSzrw0mw" type="1001">
     <children xmi:type="notation:Node" xmi:id="_jvFT8NwzEeOextCSzrw0mw" type="4001"/>
@@ -138,7 +138,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_jvEF0dwzEeOextCSzrw0mw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="Dentalclinic.ecore#//Product"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jvEs4NwzEeOextCSzrw0mw" x="780" y="45" width="151"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jvEs4NwzEeOextCSzrw0mw" x="750" y="240" width="197" height="138"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_TIWVwNw0EeOextCSzrw0mw" type="1001">
     <children xmi:type="notation:Node" xmi:id="_TIW80Nw0EeOextCSzrw0mw" type="4001"/>
@@ -178,7 +178,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_TIWVwdw0EeOextCSzrw0mw" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
     <element xmi:type="ecore:EClass" href="Dentalclinic.ecore#//Client"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TIWVwtw0EeOextCSzrw0mw" x="720" y="180"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TIWVwtw0EeOextCSzrw0mw" x="705" y="510"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_1QV9gdwuEeOextCSzrw0mw"/>
   <element xmi:type="ecore:EPackage" href="Dentalclinic.ecore#/"/>
