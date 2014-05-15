@@ -1,3 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    name="dentalclinic" nsURI="http://dentalclinic/1.0" nsPrefix="dentalclinic"/>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="dentalclinic" nsURI="http://dentalclinic/1.0" nsPrefix="dentalclinic">
+  <eClassifiers xsi:type="ecore:EClass" name="Appointment">
+    <eOperations name="calcCost"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Treatments" lowerBound="1"
+        upperBound="-1" eType="#//Treatment" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="theDentist" eType="#//Dentist"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Products" lowerBound="1"
+        upperBound="-1" eType="#//Product"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clients" eType="#//Client"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="client" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cost" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dentist"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="products"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeSlots"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="treatments"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Treatment" abstract="true">
+    <eOperations name="calcTotalPrice"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="price"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="product"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeSlots"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="TreatmetProducts" lowerBound="1"
+        upperBound="-1" eType="#//Product" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dentist">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schedule"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Product" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="customerCost"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="treatmentCost"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Client">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="address"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="clientType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deltaCareNum"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastAppt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="prefDentist"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="Client"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="EDataType0"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Array" instanceClassName="java.util.array"/>
+  <eClassifiers xsi:type="ecore:EDataType" name=""/>
+</ecore:EPackage>
