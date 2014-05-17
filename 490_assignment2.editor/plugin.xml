@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated Dentalclinic -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="dentalclinic.presentation.DentalclinicModelWizardID"
+            name="%_UI_DentalclinicModelWizard_label"
+            class="dentalclinic.presentation.DentalclinicModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DentalclinicModelFile.gif">
+         <description>%_UI_DentalclinicModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated Dentalclinic -->
+      <editor
+            id="dentalclinic.presentation.DentalclinicEditorID"
+            name="%_UI_DentalclinicEditor_label"
+            icon="icons/full/obj16/DentalclinicModelFile.gif"
+            extensions="dentalclinic"
+            class="dentalclinic.presentation.DentalclinicEditor"
+            contributorClass="dentalclinic.presentation.DentalclinicActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
