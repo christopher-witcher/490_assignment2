@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/490_assignment2/src" modelPluginID="490_assignment2"
+    modelName="Dentalclinic" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>Dentalclinic.ecore</foreignModel>
+  <genPackages prefix="Dentalclinic" disposableProviderFactory="true" ecorePackage="Dentalclinic.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Dentalclinic.ecore#//ApptStatus">
+      <genEnumLiterals ecoreEnumLiteral="Dentalclinic.ecore#//ApptStatus/active"/>
+      <genEnumLiterals ecoreEnumLiteral="Dentalclinic.ecore#//ApptStatus/cancelled"/>
+      <genEnumLiterals ecoreEnumLiteral="Dentalclinic.ecore#//ApptStatus/past"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Dentalclinic.ecore#//ClientType">
+      <genEnumLiterals ecoreEnumLiteral="Dentalclinic.ecore#//ClientType/deltaCare"/>
+      <genEnumLiterals ecoreEnumLiteral="Dentalclinic.ecore#//ClientType/inactive"/>
+      <genEnumLiterals ecoreEnumLiteral="Dentalclinic.ecore#//ClientType/private"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="Dentalclinic.ecore#//schedule"/>
+    <genClasses ecoreClass="Dentalclinic.ecore#//Appointment">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Dentalclinic.ecore#//Appointment/treatments"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Dentalclinic.ecore#//Appointment/dentist"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Dentalclinic.ecore#//Appointment/products"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Dentalclinic.ecore#//Appointment/client"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Appointment/cost"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Appointment/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Appointment/status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Appointment/timeSlots"/>
+      <genOperations ecoreOperation="Dentalclinic.ecore#//Appointment/calcCost"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Dentalclinic.ecore#//Treatment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Treatment/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Treatment/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Treatment/timeSlots"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Dentalclinic.ecore#//Treatment/product"/>
+      <genOperations ecoreOperation="Dentalclinic.ecore#//Treatment/calcTotalPrice"/>
+    </genClasses>
+    <genClasses ecoreClass="Dentalclinic.ecore#//Dentist">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Dentist/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Dentist/schedule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Dentalclinic.ecore#//Dentist/prefDentist"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Dentalclinic.ecore#//Product">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Product/customerCost"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Product/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Product/treatmentCost"/>
+    </genClasses>
+    <genClasses ecoreClass="Dentalclinic.ecore#//Client">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Client/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Client/clientType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Client/deltaCareNum"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Client/lastAppt"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//Client/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Dentalclinic.ecore#//PolishingGel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Dentalclinic.ecore#//PolishingGel/bottleCost"/>
+    </genClasses>
+    <genClasses ecoreClass="Dentalclinic.ecore#//Amalgam"/>
+    <genClasses ecoreClass="Dentalclinic.ecore#//GoldCrown"/>
+    <genClasses ecoreClass="Dentalclinic.ecore#//Crown"/>
+    <genClasses ecoreClass="Dentalclinic.ecore#//Scaling"/>
+    <genClasses ecoreClass="Dentalclinic.ecore#//Filling"/>
+    <genClasses ecoreClass="Dentalclinic.ecore#//Checkup"/>
+    <genClasses ecoreClass="Dentalclinic.ecore#//MinorSurgery"/>
+  </genPackages>
+</genmodel:GenModel>
